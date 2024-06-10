@@ -1,12 +1,4 @@
-# Build and Deploy a Modern Crypto Exchange Uniswap dApp and Master Web3 Development & Smart Contracts
-![Uniswap](https://i.ibb.co/GV4ZBpG/Thumbnail-9.png)
-
-
-Sure, here's the detailed documentation for the Aptos Exchange project:
-
----
-
-# Aptos Exchange Documentation
+# Aptos Exchange 
 
 ## Table of Contents
 - [Introduction](#introduction)
