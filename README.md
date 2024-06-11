@@ -1,19 +1,5 @@
 # Aptos Exchange 
 
-## Table of Contents
-- [Introduction](#introduction)
-- [What it Does](#what-it-does)
-- [The Problem it Solves](#the-problem-it-solves)
-- [Challenges I Ran Into](#challenges-i-ran-into)
-- [Technologies I Used](#technologies-i-used)
-- [How We Built It](#how-we-built-it)
-- [What We Learned](#what-we-learned)
-- [What's Next for Aptos Exchange](#whats-next-for-aptos-exchange)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 Aptos Exchange is a decentralized cryptocurrency exchange (DEX) built as a Uniswap clone using React. It leverages the Aptos blockchain to enable users to swap cryptocurrencies securely and efficiently. The goal of this project is to provide a seamless, decentralized solution for cryptocurrency trading.
