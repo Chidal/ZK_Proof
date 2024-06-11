@@ -14,6 +14,7 @@ Aptos Exchange allows users to:
 ## The Problem it Solves
 
 Traditional centralized exchanges suffer from several issues:
+
 - **Security vulnerabilities**: Centralized exchanges are prime targets for hackers.
 - **High transaction fees**: Users often incur high fees for transactions.
 - **Lack of transparency**: Centralized exchanges can lack transparency, leading to trust issues.
@@ -26,6 +27,7 @@ Aptos Exchange addresses these problems by:
 ## Challenges I Ran Into
 
 - **Learning Curve**: Adapting to the Move language and integrating it with the Aptos blockchain was initially challenging.
+
 - **Blockchain Integration**: Ensuring seamless wallet connections and transaction processing required meticulous attention to detail.
 - **Performance Optimization**: Keeping the application responsive and efficient under varying loads.
 - **Security Considerations**: Ensuring the smart contracts were secure and free from vulnerabilities.
@@ -44,11 +46,7 @@ Aptos Exchange addresses these problems by:
 - **Move language**: For writing smart contracts on the Aptos blockchain.
 - **Ethers.js**: For blockchain interactions.
 
-### Tooling
-- **ESLint**: For code quality and linting.
-- **GitHub**: For version control and collaboration.
-
-## How We Built It
+## How I Built It
 
 1. **Frontend Development**: Using React and styled-components, we created a user-friendly interface for the exchange.
 2. **Smart Contract Development**: 
@@ -65,10 +63,7 @@ Aptos Exchange addresses these problems by:
 
 ## What's Next for Aptos Exchange
 
-- **Feature Expansion**: Adding functionalities such as liquidity pools and user authentication.
-- **Community Engagement**: Building a community to gather feedback and foster collaboration.
-- **Security Audits**: Conducting thorough security audits to ensure user safety.
-- **Performance Scaling**: Optimizing the application to handle increased user load and transaction volumes.
+Going into the Aptos chain and testing the availability to comply and adapt with the other chains 
 
 ## Installation
 
@@ -83,7 +78,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/aptos-exchange.git
+   git clone https://github.com/chidal/aptos-exchange.git
    cd aptos-exchange
    ```
 
@@ -127,20 +122,5 @@ To set up the project locally, follow these steps:
    - Initiate cryptocurrency swaps.
    - Monitor transaction status and history.
 
-## Contributing
 
-We welcome contributions from the community! To contribute:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this documentation to better fit your project's specific details and requirements!
