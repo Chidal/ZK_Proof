@@ -1,14 +1,25 @@
 import React from "react";
 import { useEthers } from "@usedapp/core";
-
 import styles from "./styles";
 import { usePools } from "./hooks";
 import { uniswapLogo } from "./assets";
 import { Exchange, Loader, WalletButton } from "./components";
+import { useZetachain } from "./ZetachainContext";
 
 const App = () => {
   const { account } = useEthers();
   const [poolsLoading, pools] = usePools();
+  const zeta = useZetachain();
+
+  // Example function using Zetachain
+  const handleZetachainOperation = async () => {
+    try {
+      const result = await zeta.someOperation();
+      console.log(result);
+    } catch (error) {
+      console.error("Zetachain operation failed:", error);
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -44,6 +55,8 @@ const App = () => {
             </div>
           </div>
         </div>
+
+        <button onClick={handleZetachainOperation}>Run Zetachain Operation</button>
       </div>
     </div>
   );
