@@ -1,30 +1,22 @@
-import Web3 from "web3";
-import { useEffect, useState } from "react";
-import { useConfig } from "@usedapp/core";
-
-import { ROUTER_ADDRESS } from "../config";
-import { getFactoryInfo, getRouterInfo } from "../utils";
-
-export const loadPools = async (providerUrl) => {
-  const provider = new Web3.providers.HttpProvider(providerUrl);
-  const web3 = new Web3(provider);
-  const routerInfo = await getRouterInfo(ROUTER_ADDRESS, web3);
-  const factoryInfo = await getFactoryInfo(routerInfo.factory, web3);
-  return factoryInfo.pairsInfo;
-}
-
-export const usePools = () => {
-  const { readOnlyChainId, readOnlyUrls } = useConfig();
-  const [loading, setLoading] = useState(true);
-  const [pools, setPools] = useState({});
-
-  useEffect(() => {
-    loadPools(readOnlyUrls[readOnlyChainId])
-        .then((pools) => {
-          setPools(pools);
-          setLoading(false);
-        });
-  }, [readOnlyUrls, readOnlyChainId]);
-
-  return [loading, pools];
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: '18.2' } },
+  plugins: ['react-refresh'],
+  rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+    "react/prop-types": "off"
+  },
 }
