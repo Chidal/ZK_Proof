@@ -1,8 +1,7 @@
-import Zetachain from 'zetachain-sdk';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-const zeta = new Zetachain({
-  apiKey: process.env.ZETA_API_KEY,
-  network: 'mainnet',
-});
-
-export default zeta;
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
