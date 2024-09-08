@@ -1,25 +1,17 @@
-{
-  "short_name": "Eth App",
-  "name": "Create Eth App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+.header{
+  display: flex;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #f2f4f4;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.date {
+  font-size: 16px;
 }
