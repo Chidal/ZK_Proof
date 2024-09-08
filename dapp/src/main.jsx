@@ -1,19 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { DAppProvider } from "@usedapp/core";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
 
-import App from "./App";
-import { DAPP_CONFIG } from "./config";
-import "./index.css";
-import { ZetachainProvider } from "./ZetachainContext";
-
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DAppProvider config={DAPP_CONFIG}>
-      <ZetachainProvider>
-        <App />
-      </ZetachainProvider>
-    </DAppProvider>
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
-);
+)
