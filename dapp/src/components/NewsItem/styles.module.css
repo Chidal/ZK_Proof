@@ -1,14 +1,29 @@
-import React, { createContext, useContext } from 'react';
-import zeta from './zetachainConfig';
+.item{
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
 
-const ZetachainContext = createContext();
+.title {
+  font-size: 14px;
+}
 
-export const ZetachainProvider = ({ children }) => {
-  return (
-    <ZetachainContext.Provider value={zeta}>
-      {children}
-    </ZetachainContext.Provider>
-  );
-};
+.extra {
+  font-size: 12px;
+  color: #6c7072;
+}
 
-export const useZetachain = () => useContext(ZetachainContext);
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrapper {
+  width: 64px;
+  height: 64px;
+  background-color: #f2f4f5;
+  background-position: center;
+  background-size: cover;
+  flex-shrink: 0;
+}
