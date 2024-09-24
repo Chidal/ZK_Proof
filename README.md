@@ -1,141 +1,52 @@
-# Zetaz-uniswap 
+# What it does
+This world news dApp provides real-time news updates from various categories including technology, business, entertainment, health, and more. Users can browse and filter news by categories like world, politics, sports, and niche interests such as programming and finance. The dApp also integrates Superfluid’s technology, allowing users to subscribe to premium content through token streams and pay-as-you-go models using a connected crypto wallet.
 
-## What it does
 
-Zeta-Uniswap offers a seamless platform for users to swap their digital assets built on the ZetaChain. It provides a user-friendly interface and robust backend infrastructure to ensure smooth and efficient asset exchanges. The app supports various types of digital assets, including cryptocurrencies and tokens, enabling users to diversify their portfolios easily.
 
-Secure wallet integration to protect user assets.
+# The problem it solves
+Accessing curated news content from a variety of categories can often be cluttered and unfocused. Users are bombarded with unwanted news, irrelevant to their preferences. This dApp offers a tailored experience, allowing users to focus on the categories they care about. Additionally, using Superfluid, the platform solves the issue of micropayments for premium content and subscriptions in a seamless, automated fashion.
 
-Advanced encryption techniques to ensure data privacy.
 
-Multi-factor authentication for an added layer of security.
 
-## The problem it solves
+# Challenges I ran into
+Integrating Superfluid’s protocol for real-time micropayments was complex, especially for enabling subscription-based content.
 
-Centralization: Traditional exchanges are centralized, posing security risks and potential downtime.  offers a decentralized solution, ensuring greater security and availability.
+Ensuring a user-friendly interface that allows quick filtering of categories while maintaining smooth wallet connectivity.
 
-High Fees: Centralized exchanges often have high transaction fees. Our platform minimizes fees by utilizing the efficient Zetachain.
+Handling dynamic updates in news data while optimizing for speed and performance in the frontend.
 
-User Control: Users will retain full control over their funds, as transactions are executed directly from their wallets without intermediaries.
 
-Speed: By the Zetachain, transactions are going to be processed quickly, enhancing the user experience.
 
+# Technologies I used
+Frontend: React, Vite, and Axios for handling news API integration.
 
+Backend: Superfluid protocol integration for streaming payments.
 
-## Challenges I ran into
+Web3: Connect to wallet functionality using web3 tools.
 
-Learning Curve: Adapting to the Zetachain's unique features was initially challenging.
+Dev Tools: ESLint for linting, Vite for fast builds and previews.
 
-Integration: Ensuring seamless wallet integration and smooth user experience required meticulous testing and debugging.
 
-Performance Optimization: Optimizing the app to handle multiple transactions efficiently while maintaining responsiveness.
 
-Security: Implementing robust security measures to protect user data and funds from potential threats.
+# How we built it
+The dApp was built using React for the frontend, with Vite as the development and build tool for fast refresh and lightweight builds. Axios was used to fetch the news from external APIs. On the backend, we integrated Superfluid’s real-time finance protocol, which allows users to connect their wallets and participate in subscription models. The “connect to wallet” button enables users to link their crypto wallets and initiate payments for premium content using token streams.
 
 
 
+# What we learned
+Gained a deeper understanding of integrating payment protocols like Superfluid into dApps.
 
+Learned how to balance performance with complex filtering in the frontend while dealing with large datasets (news articles).
 
-## Technologies I used
-Frontend:
+Enhanced knowledge of Web3 wallet integrations and real-time streaming of crypto payments.
 
-React Styled-components, Apollo Client GraphQL
 
-Blockchain:
 
-Solidity for smart contracts, Hardhat for development and testing, Ethers.js for blockchain interactions
+# What's next for Fluidnews
+Complete the integration of the Superfluid streaming payment system for premium news categories.
 
-Zetachain's technologies
+Implement user profiles to personalize the news feed and subscription preferences further.
 
-## How we built it
+Expand the dApp to include more localization options for news content based on regions and languages.
 
-Frontend Development:
-
-Using React and styled-components, I created a user-friendly interface for the exchange.
-
-Smart Contract Development:
-
-Writing the smart contracts in solidity
-
-Used Hardhat for testing and deployment.
-
-Blockchain Integration:
-
-Still under development.
-
-Continuous Improvement: Iteratively improved the application based on feedback and performance metrics.
-
-
-
-## What we learned
-
-Blockchain Integration: Still developing and deploying in the Aptos chain.
-
-Decentralized Application Development: Improved my ability to develop and maintain decentralized applications (dApps).
-
-
-
-## What's next for
-
-Proper utilization zetachain's technologies and making proper use of it's resources, going into the chain and testing the availability to comply and adapt with the other chains.
-
-
-## Installation
-
-To set up the project locally, follow these steps:
-
-### Prerequisites
-
-- Node.js and npm installed on your machine.
-- A GitHub account for repository access.
-
-### Frontend
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/chidal/aptos-exchange.git
-   cd aptos-exchange
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-   ```bash
-   npm start
-   ```
-
-### Smart Contract
-
-1. **Navigate to the smart contract directory**:
-   ```bash
-   cd aptos-exchange/smart-contract
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Compile and deploy the smart contract**:
-   Follow the steps for deploying Move language contracts on the Aptos blockchain as per [Aptos documentation](https://aptos.dev/move/move-on-aptos/).
-
-## Usage
-
-1. **Start the frontend**:
-   ```bash
-   npm start
-   ```
-
-2. **Access the application**:
-   Open your browser and navigate to `http://localhost:3000`.
-
-3. **Interact with the dApp**:
-   - Connect your wallet.
-   - Initiate cryptocurrency swaps.
-   - Monitor transaction status and history.
-
-
-
+Explore partnerships with news providers and further refine the pay-as-you-go model using Superfluid.
